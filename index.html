@@ -13,7 +13,28 @@
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 		<style>
-			
+			body #cdawrap {
+				border: 1px solid #000;
+				--cda-bottom: auto;
+				--cda-right: 3.5rem;
+				--cda-left: auto;
+				--cda-text-align: right;
+				--cda-width: 370px;
+				border-radius: 6px;
+				padding: 0.75rem 1rem 1rem;
+				--footer-align: end;
+				--cda-text-size: 0.875rem;
+				--cda-footer-fontsize: 0.785rem;
+				--cda-text-color: #000;
+				position: absolute;
+				transform: translateY(-150%);
+			}
+			@media screen and (max-width: 800px){
+				body #cdawrap {
+					transform: none;
+					border-radius: 0px;
+				}
+			}
 		</style>
 	</head>
 	<body class="demo-1">
